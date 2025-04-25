@@ -14,6 +14,14 @@ Handler h3 = new ConcreteHandler3();
 h1.SetSuccessor(h2);
 h2.SetSuccessor(h3);
 
+
+// Get ejnkins to triger build
+
+var someVal = "a value";
+Console.WriteLine(someVal);
+
+
+
 int[] requests = { 5, 14, 22, 18, 3, 27, 20 };
 
 foreach (int request in requests)
