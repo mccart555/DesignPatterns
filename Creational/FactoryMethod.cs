@@ -26,7 +26,6 @@ public interface IProduct
 
 
 // Implement the interface with concrete classes.
-
 public class ConcreteProductA : IProduct
 {
     public void DoWork()
@@ -46,7 +45,6 @@ public class ConcreteProductB : IProduct
 
 // The creator class declares the factory method, which returns an object of type IProduct. The subclasses override this method 
 // to create different types of products.
-
 public abstract class Creator
 {
     // Factory method

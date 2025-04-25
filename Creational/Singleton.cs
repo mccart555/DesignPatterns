@@ -12,7 +12,13 @@ namespace DesignPatterns.Creational;
 //    Private Constructor: Prevents instantiation from outside the class.
 //    Static Instance:     Holds the single instance.
 //    Thread-Safety:       Ensures that only one thread can create the instance at a time using lock.
-
+// Key Points About Lock for Thread safety:
+//   Lock Object: Always use a private object as the lock. Never use types or instances that are accessible from outside the class, such as this,
+//                to avoid deadlocks and unintended behavior.
+//   Scope:       Only the code inside the lock block is protected. Other parts of the code can still be accessed by multiple threads simultaneously.
+//   Performance: Overusing lock can lead to performance bottlenecks.Be mindful of the granularity of your locking.
+// By using the lock statement, you can ensure that your code operates correctly in a multithreaded environment, maintaining data integrity and
+// preventing race conditions.
 // This implementation provides a robust and efficient way to ensure a single instance of the class is created, even in a multithreaded environment.
 public class Singleton
 {
@@ -84,11 +90,3 @@ public class ThreadSafeSingleton
         Console.WriteLine("ThreadSafeSingleton instance is working!");
     }
 }
-
-// Key Points About Lock for Thread safety:
-//   Lock Object: Always use a private object as the lock. Never use types or instances that are accessible from outside the class, such as this,
-//                to avoid deadlocks and unintended behavior.
-//   Scope:       Only the code inside the lock block is protected. Other parts of the code can still be accessed by multiple threads simultaneously.
-//   Performance: Overusing lock can lead to performance bottlenecks.Be mindful of the granularity of your locking.
-// By using the lock statement, you can ensure that your code operates correctly in a multithreaded environment, maintaining data integrity and
-// preventing race conditions.

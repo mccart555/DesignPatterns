@@ -18,7 +18,7 @@ public abstract class ShapeX
     //    Client: Uses the prototype to create new objects.
     //
     //Explanation of the Code
-    //    Shape Class: This is the abstract prototype class that defines the Clone method.It also has common properties like Id and Type.
+    //    Shape Class: This is the abstract prototype class that defines the Clone method.  It also has common properties like Id and Type.
     //    Circle and Rectangle Classes: These are concrete prototypes that implement the Clone method using the MemberwiseClone method, which
     //    creates a shallow copy of the object. They also override the ToString method to provide a string representation of the objects.
 

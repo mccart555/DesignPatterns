@@ -3,7 +3,7 @@ using DesignPatterns.Creational;
 using DesignPatterns.Functional;
 using DesignPatterns.Structural;
 
-////////////////////////////////////Behavioral Patters
+////////////////////////////////////Behavioral Patterns
 
 //////////////Chain of Responsibility////////////////////
 
@@ -93,7 +93,7 @@ subject.ChangeState("State 1");
 subject.Detach(observerB);
 subject.ChangeState("State 2");
 
-////////////////////////////////////Creational Patters
+////////////////////////////////////Creational Patterns
 
 /////////////////////Abstract Factory/////////////////
 
@@ -162,7 +162,7 @@ singleton.DoSomething();
 ThreadSafeSingleton threadSafeSingleton = ThreadSafeSingleton.Instance;
 threadSafeSingleton.DoSomething();
 
-////////////////////////////////////Functional Patters
+////////////////////////////////////Functional Patterns
 
 ////////////////////HigherOrderFunctions//////////////
 List<int> numbers = [1, 2, 3, 4, 5];
@@ -246,7 +246,7 @@ Console.WriteLine("Transformed Numbers: " + string.Join(", ", transformedNumbers
 // Output: Transformed Numbers: 12, 14, 16, 18, 20
 
 
-////////////////////////////////////Structural Patters
+////////////////////////////////////Structural Patterns
 
 /////////////////////////Adapter///////////////////////
 Adaptee adaptee = new Adaptee();
